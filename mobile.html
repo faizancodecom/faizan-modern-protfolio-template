@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <title>Faizan — Web Developer & UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Faizan, a web developer and UI/UX designer.">
+  <link rel="stylesheet" href="./css/mobile.css">
+  <script>
+    // Mask URL: remove mobile.html from address bar so it shows the clean URL
+    (function () {
+      try {
+        var path = window.location.pathname;
+        var cleanPath = path.replace(/mobile\.html.*$/, '') || '/';
+        var cleanUrl = window.location.origin + cleanPath + window.location.search + window.location.hash;
+        window.history.replaceState({ page: 'mobile' }, '', cleanUrl);
+      } catch (e) {}
+    })();
+
+    // If opened on desktop, offer to go to full desktop version
+    (function () {
+      if (window.innerWidth >= 1024) {
+        if (confirm('Open desktop version?')) {
+          window.location.replace('index.html');
+        }
+      }
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Caveat:wght@400;700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;700&family=Gugi&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="m-header">
+    <a href="#home" class="m-logo">
+      <span>Faizan</span><span class="m-logo-dot">.</span>
+    </a>
+    <button class="m-menu-btn" id="mMenuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <nav class="m-nav" id="mNav">
+    <a href="#home" class="m-nav-link">Home</a>
+    <a href="#about" class="m-nav-link">About</a>
+    <a href="#skills" class="m-nav-link">Skills</a>
+    <a href="#services" class="m-nav-link">Services</a>
+    <a href="#projects" class="m-nav-link">Projects</a>
+    <a href="#contact" class="m-nav-link">Contact</a>
+  </nav>
+
+  <main class="m-main">
+    <!-- HOME -->
+    <section id="home" class="m-section m-home">
+      <div class="m-home-text">
+        <h1 class="m-home-title">
+          <span class="m-title-1">I am a</span>
+          <span class="m-title-2">Web Developer</span>
+          <span class="m-title-3">Professional in</span>
+          <span class="m-title-4">UI / UX</span>
+        </h1>
+        <p class="m-home-desc">Crafting modern, fast, and beautiful websites with clean code and thoughtful design.</p>
+        <div class="m-home-actions">
+          <a href="#projects" class="m-btn m-btn-primary">View Work</a>
+          <a href="#contact" class="m-btn m-btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="m-home-image">
+        <div class="m-image-wrap">
+          <img src="images/image-10.png" alt="Faizan" />
+        </div>
+        <div class="m-circular" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs>
+              <path id="mFullCircle" d="M 100,5 A 95,95 0 1,0 100,195 A 95,95 0 1,0 100,5" fill="none"/>
+            </defs>
+            <text font-family="'Caveat', cursive" font-size="17" font-weight="700" fill="#000" letter-spacing="2">
+              <textPath href="#mFullCircle" textLength="597" lengthAdjust="spacing">WEB DEVELOPER ✦ CREATIVE ✦ UI/UX ✦</textPath>
+            </text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="m-section m-about">
+      <div class="m-section-head">
+        <h2 class="m-section-title">About Me</h2>
+        <p class="m-section-sub">~ who i am ~</p>
+      </div>
+      <div class="m-about-content">
+        <p class="m-about-text">
+          Hey! I'm <strong>Faizan</strong>, a passionate <strong>Web Developer</strong> and
+          <strong>UI/UX Designer</strong> who loves turning ideas into clean, fast, and beautiful
+          digital experiences. I enjoy crafting responsive websites, designing intuitive interfaces,
+          and building products that people actually love to use.
+        </p>
+        <p class="m-about-text">
+          When I'm not coding, you'll find me exploring new design trends, contributing to side
+          projects, or sharing what I learn on my YouTube channel.
+        </p>
+        <div class="m-about-tags">
+          <span class="m-about-tag">🎨 Designer</span>
+          <span class="m-about-tag">💻 Developer</span>
+          <span class="m-about-tag">📱 Mobile-First</span>
+          <span class="m-about-tag">⚡ Fast Sites</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="m-section m-skills">
+      <div class="m-section-head">
+        <h2 class="m-section-title">My Skills</h2>
+        <p class="m-section-sub">~ what i do best ~</p>
+      </div>
+      <div class="m-skills-grid">
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/html-5.svg" alt="HTML5" loading="lazy" />
+          <span>HTML5</span>
+        </div>
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/css.svg" alt="CSS3" loading="lazy" />
+          <span>CSS3</span>
+        </div>
+        <div class="m-skill-card">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#F7DF1E" d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179z"/></svg>
+          <span>JavaScript</span>
+        </div>
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/react.svg" alt="React" loading="lazy" />
+          <span>React</span>
+        </div>
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/typescript-icon.svg" alt="TypeScript" loading="lazy" />
+          <span>TypeScript</span>
+        </div>
+        <div class="m-skill-card">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#3776AB" d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.007 2.752h5.814v.826H3.9S0 5.789 0 11.856c0 6.067 3.387 5.834 3.387 5.834h2.034v-2.81s-.108-3.387 3.387-3.387h5.834s3.282.052 3.282-3.225V3.115S18.282 0 11.914 0zM8.708 1.85a1.082 1.082 0 1 1 0 2.164 1.082 1.082 0 0 1 0-2.164z"/><path fill="#FFD43B" d="M12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.007-2.752h-5.814v-.826h8.121s3.9.435 3.9-5.632c0-6.067-3.387-5.834-3.387-5.834h-2.034v2.81s.108 3.387-3.387 3.387H9.412s-3.282-.052-3.282 3.225v6.34S5.718 24 12.086 24zm3.206-1.85a1.082 1.082 0 1 1 0-2.164 1.082 1.082 0 0 1 0 2.164z"/></svg>
+          <span>Python</span>
+        </div>
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/git-icon.svg" alt="Git" loading="lazy" />
+          <span>Git</span>
+        </div>
+        <div class="m-skill-card">
+          <img src="https://devicons.io/devicons/icons/figma.svg" alt="Figma" loading="lazy" />
+          <span>Figma</span>
+        </div>
+        <div class="m-skill-card">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#1a1a1a" d="M12 2C6.49 2 2 6.49 2 12s4.49 10 10 10c1.38 0 2.5-1.12 2.5-2.5 0-.61-.23-1.2-.64-1.67-.08-.1-.13-.21-.13-.33 0-.28.22-.5.5-.5H16c3.31 0 6-2.69 6-6 0-4.96-4.49-9-10-9z"/>
+            <circle cx="6.5" cy="11.5" r="1.5" fill="#ff4d6d"/>
+            <circle cx="9.5" cy="7.5" r="1.5" fill="#ffb800"/>
+            <circle cx="14.5" cy="7.5" r="1.5" fill="#00c8ff"/>
+            <circle cx="17.5" cy="11.5" r="1.5" fill="#9d4edd"/>
+          </svg>
+          <span>UI / UX</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="m-section m-services">
+      <div class="m-section-head">
+        <h2 class="m-section-title">What I Do</h2>
+        <p class="m-section-sub">~ my services ~</p>
+      </div>
+      <div class="m-services-grid">
+        <div class="m-service-card">
+          <div class="m-service-icon" style="background:#ff4d6d">
+            <svg viewBox="0 0 24 24"><path fill="#fff" d="M9.4 16.6 4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0 4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+          </div>
+          <h3 class="m-service-name">Web Development</h3>
+          <p class="m-service-desc">Modern, fast, responsive websites built with clean code and the latest tech.</p>
+        </div>
+        <div class="m-service-card">
+          <div class="m-service-icon" style="background:#00c8ff">
+            <svg viewBox="0 0 24 24"><path fill="#fff" d="M12 2 1 21h22L12 2zm0 4.5L19.5 19h-15L12 6.5zM11 10v4h2v-4h-2zm0 5v2h2v-2h-2z"/></svg>
+          </div>
+          <h3 class="m-service-name">UI / UX Design</h3>
+          <p class="m-service-desc">Intuitive interfaces and delightful user experiences from wireframe to finish.</p>
+        </div>
+        <div class="m-service-card">
+          <div class="m-service-icon" style="background:#9d4edd">
+            <svg viewBox="0 0 24 24"><path fill="#fff" d="M7 2v2H2v18h20V4h-5V2H7zm12 4v14H4V6h16V6zM7 6V4h10v2H7zm2 4h6v2H9v-2zm0 4h6v2H9v-2z"/></svg>
+          </div>
+          <h3 class="m-service-name">Responsive Sites</h3>
+          <p class="m-service-desc">Pixel-perfect layouts that look great on phones, tablets, and desktops.</p>
+        </div>
+        <div class="m-service-card">
+          <div class="m-service-icon" style="background:#ffb800">
+            <svg viewBox="0 0 24 24"><path fill="#fff" d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3 class="m-service-name">Fast & Optimized</h3>
+          <p class="m-service-desc">Lightning-fast load times and smooth interactions for the best user experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section id="stats" class="m-section m-stats">
+      <div class="m-stats-grid">
+        <div class="m-stat-card">
+          <div class="m-stat-num">10+</div>
+          <div class="m-stat-label">Projects Built</div>
+        </div>
+        <div class="m-stat-card">
+          <div class="m-stat-num">5+</div>
+          <div class="m-stat-label">Technologies</div>
+        </div>
+        <div class="m-stat-card">
+          <div class="m-stat-num">100%</div>
+          <div class="m-stat-label">Passion</div>
+        </div>
+        <div class="m-stat-card">
+          <div class="m-stat-num">24/7</div>
+          <div class="m-stat-label">Learning</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="m-section m-projects">
+      <div class="m-section-head">
+        <h2 class="m-section-title">My Projects</h2>
+        <p class="m-section-sub">~ featured work ~</p>
+      </div>
+      <div class="m-projects-grid" id="mProjectsGrid"></div>
+      <div class="m-pagination" id="mPagination"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="m-section m-contact">
+      <div class="m-section-head">
+        <h2 class="m-section-title">Get in Touch</h2>
+        <p class="m-section-sub">~ let's connect ~</p>
+      </div>
+      <div class="m-contact-grid">
+        <a class="m-contact-card" href="https://www.youtube.com/@triquetradeveloper" target="_blank" rel="noopener noreferrer">
+          <div class="m-contact-icon">
+            <svg viewBox="0 0 24 24"><path fill="#FF0000" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <div class="m-contact-info">
+            <div class="m-contact-label">YouTube</div>
+            <div class="m-contact-value">@triquetradeveloper</div>
+          </div>
+        </a>
+        <a class="m-contact-card" href="https://github.com/Faizan-code-arch" target="_blank" rel="noopener noreferrer">
+          <div class="m-contact-icon">
+            <svg viewBox="0 0 24 24"><path fill="#181717" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </div>
+          <div class="m-contact-info">
+            <div class="m-contact-label">GitHub</div>
+            <div class="m-contact-value">Faizan-code-arch</div>
+          </div>
+        </a>
+        <a class="m-contact-card" href="mailto:faizansaleem0029@gmail.com">
+          <div class="m-contact-icon">
+            <svg viewBox="0 0 24 24"><path fill="#EA4335" d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.272H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+          </div>
+          <div class="m-contact-info">
+            <div class="m-contact-label">Email</div>
+            <div class="m-contact-value">faizansaleem0029@gmail.com</div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="m-footer">
+    <p>© 2026 Faizan</p>
+  </footer>
+
+  <script>
+    // Mobile menu
+    (function () {
+      const btn = document.getElementById('mMenuBtn');
+      const nav = document.getElementById('mNav');
+      btn.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        btn.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+      nav.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('open');
+          btn.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    // Projects
+    (function () {
+      const PROJECTS = [
+        { id: 'd-lamenious',  name: 'Lamenious',      desc: 'Bold creative landing page with striking typography and smooth motion.', tags: ['HTML','CSS','JS'],          url: 'https://lamenious.netlify.app/',            thumb: 'https://faizancode.vercel.app/projects/lamenious.png' },
+        { id: 'd-musical',    name: 'Resume Maker',   desc: 'Animated music-themed site with playful visuals.',                       tags: ['HTML','CSS','Animation'],    url: 'https://musical-peony-bb10de.netlify.app/', thumb: 'https://faizancode.vercel.app/projects/resume-ok.png' },
+        { id: 'd-math',       name: 'Mathematichian', desc: 'Interactive math learning experience with dark UI.',                     tags: ['JS','Education','UI'],       url: 'https://mathematichian.netlify.app/',      thumb: 'https://faizancode.vercel.app/projects/mathematichian.png' },
+        { id: 'd-mellifluous',name: 'Mellifluous Kitten', desc: 'Smooth, elegant portfolio with soft aesthetic.',                   tags: ['HTML','CSS','Portfolio'],    url: 'https://mellifluous-kitten-7ba131.netlify.app/', thumb: 'https://faizancode.vercel.app/projects/clientforge.png' }
+      ];
+
+      function esc(s) { return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+      function cardHTML(p, i) {
+        const tags = p.tags.map(t => `<span class="m-tag">${esc(t)}</span>`).join('');
+        return `<a class="m-project-card" href="${esc(p.url)}" target="_blank" rel="noopener noreferrer" style="animation-delay: ${(0.1 + i * 0.08).toFixed(2)}s">
+          <div class="m-project-preview">
+            <div class="m-browser-bar"><span class="m-dot red"></span><span class="m-dot yellow"></span><span class="m-dot green"></span><span class="m-url">${esc(p.url)}</span></div>
+            <div class="m-preview-img">
+              <img src="${esc(p.thumb)}" alt="${esc(p.name)}" loading="lazy" />
+            </div>
+          </div>
+          <div class="m-project-info">
+            <div class="m-project-name">${esc(p.name)}</div>
+            <div class="m-project-desc">${esc(p.desc)}</div>
+            <div class="m-project-tags">${tags}</div>
+          </div>
+        </a>`;
+      }
+
+      const PER_PAGE = 2;
+      let page = 1;
+
+      function render() {
+        const grid = document.getElementById('mProjectsGrid');
+        if (!grid) return;
+        const total = Math.max(1, Math.ceil(PROJECTS.length / PER_PAGE));
+        page = Math.min(page, total);
+        const start = (page - 1) * PER_PAGE;
+        grid.innerHTML = PROJECTS.slice(start, start + PER_PAGE).map((p, i) => cardHTML(p, start + i)).join('');
+        renderPag(total);
+      }
+
+      function renderPag(total) {
+        const el = document.getElementById('mPagination');
+        if (!el) return;
+        if (total <= 1) { el.innerHTML = ''; return; }
+        let html = '<button class="m-page-btn" data-page="prev"' + (page <= 1 ? ' disabled' : '') + '>‹</button>';
+        for (let i = 1; i <= total; i++) {
+          html += '<button class="m-page-btn' + (i === page ? ' m-page-active' : '') + '" data-page="' + i + '">' + i + '</button>';
+        }
+        html += '<button class="m-page-btn" data-page="next"' + (page >= total ? ' disabled' : '') + '>›</button>';
+        el.innerHTML = html;
+      }
+
+      document.getElementById('mPagination').addEventListener('click', e => {
+        const btn = e.target.closest('.m-page-btn');
+        if (!btn || btn.disabled) return;
+        const total = Math.max(1, Math.ceil(PROJECTS.length / PER_PAGE));
+        const p = btn.dataset.page;
+        if (p === 'prev' && page > 1) page--;
+        else if (p === 'next' && page < total) page++;
+        else if (p !== 'prev' && p !== 'next') page = parseInt(p);
+        else return;
+        render();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>
